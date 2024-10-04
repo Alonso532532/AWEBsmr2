@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2</title>
+    <style>
+        fieldset {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form>
+        <fieldset>
+            <label for="P1">Nombre:</label>
+            <input type="text" id="P1">
+            <br> <br>
+            <label for="P2">Apellidos:</label>
+            <input type="text" id="P2">
+            <br> <br>
+            Sexo:
+            <input type="radio" id="P3" name="sex">
+            <label for="P3">hombre</label>
+
+            <input type="radio" id="P4" name="sex">
+            <label for="P4">mujer</label>
+            <br> <br>
+            <label for="P5">Correo:</label>
+            <input type="email" id="P5">
+        </fieldset>
+        <br> <br>
+        <label for="P6">Descripción:</label>
+        <textarea rows="10" cols="100" id="P6"></textarea>
+        <br><br>
+        <fieldset>
+            <input type="checkbox" id="P7">
+            <label for="P7">Deseo recibir información sobre novedades y ofertas</label>
+            <br><br>
+            <input type="checkbox" id="P8">
+            <label for="P8">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la
+                protección de datos</label>
+        </fieldset>
+        <br> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
