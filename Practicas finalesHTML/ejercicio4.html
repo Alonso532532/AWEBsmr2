@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario2</title>
+</head>
+
+<body>
+    <img src="Recursos/rec2.jpg" alt="">
+    <form action="/ejercicio.html" method="get">
+        <fieldset>
+            <legend>Configura tu pizza</legend>
+            <label for="tipe">Tipo de masa:</label>
+            <select name="tipo" id="tipe">
+                <optgroup label="Masas">
+                    <option value="fina">Fina</option>
+                    <option value="gorda">Gorda</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="sal">Salsas:</label>
+            <select name="sal" id="sal">
+                <optgroup label="Salsas">
+                    <option value="tomate">Tomate</option>
+                    <option value="bbq">Barbacoa</option>
+                    <option value="carbonara">Carbonara</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="chk">¿Queso?</label>
+            <input type="checkbox" id="chk" name="queso">
+            <br>
+            <label for="sal">Ingrediente:</label>
+            <select name="ing" id="ing">
+                <optgroup label="Ingredientes">
+                    <option value="tomate">Tomate</option>
+                    <option value="piña">Piña</option>
+                    <option value="peperoni">Peperoni</option>
+                    <option value="mermelada">Mermelada</option>
+                    <option value="zanaoria">Zanaoria</option>
+                    <option value="lechuga">Lechuga</option>
+                    <option value="oliva">Oliva</option>
+                    <option value="pavo">Pavo</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="chorizo">Chorizo</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="tam">Tamaño:</label>
+            <select name="tam" id="tam">
+                <optgroup label="Tamaño">
+                    <option value="pequeña">Pequeña</option>
+                    <option value="mediana">Mediana</option>
+                    <option value="Familiar">Familiar</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de pago</legend>
+            <label for="num">Número de cuenta:</label>
+            <input type="number" name="numero" id="num">
+            <br>
+            <label for="mes">Mes de caducidad:</label>
+            <input type="date" name="mes" id="mes">
+            <br>
+            <label for="cod">Código de seguridad:</label>
+            <input type="number" name="cod" id="cod">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <label for="direc">Dirección completa:</label>
+            <input type="text" name="direccion" id="direc">
+            <br>
+            <label for="ct">Observaciónes:</label>
+            <textarea name="observaciones" id="ct"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Finalizar</legend>
+            <button type="reset">Borrar información</button>
+            <button type="submit">Enviar información</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
