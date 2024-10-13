@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="Recursos/rec1.png" >
+    <link rel="shortcut icon" href="Recursos/rec1.png">
+    <style>
+        table, th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <nav>
     <a href="index.html">Inicio</a>
@@ -14,9 +21,56 @@
     <a href="tablas.html">Tablas</a>
     <a href="formularios.html">Formularios</a>
 </nav>
-<body>
-    <header>
 
-    </header>
+<body>
+    <H1>TABLAS</H1>
+    <hr>
+    <ul>
+        <li>Para que fincióne se tiene que ponér lo que hay en style.</li> 
+        <ul> 
+          <li>Con: "border: 1px solid white;" se creará un dpoble borde en la tabla, el color se puede cambiar en el "white"</li>  
+          <li>Con: "border-collapse: collapse;" se pone un solo borde</li>
+       </ul>
+        <li>Para hacer tablas tiene que poner un table y dentro utilizamos tr, th y td:</li>
+        <ul>
+            <li>tr = Fila</li>
+            <li>td = Columna</li>
+            <li>th = Columna, pero la pone como un "titulo" (en negrita y en el centro, no funciona en el ejemplo lo de que esté en el medio y no se por que)</li>
+        </ul>
+        <li>Se puede poner "colspan" y "rowspan" para expandir el tamaño de una celda, "colspan" es para lineas y "rowspan" para columnas</li>
+        <li>Ejemplo: <br>
+
+            <table>
+                <tr>
+                    <th colspan="5">Titulo (Colspan)</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>tr</td>
+                    <td>tr</td>
+                    <td rowspan="3">tr y rowspan</td>
+                </tr>
+                <tr>
+
+                    <td>td</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>td</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </li>
+    </ul>
 </body>
+
 </html>
