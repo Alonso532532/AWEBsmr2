@@ -15,6 +15,10 @@ h1 {
   background-color: #202020;
 }
 
+li {
+  margin: 10px;
+}
+
 u {
   background-color: #2b2b2b;
 }

@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagenes y elnlazes</title>
+    <title>Imagenes y elnlaces</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="Recursos/rec1.png" >
+    <link rel="shortcut icon" href="Recursos/rec1.png">
+    <style>
+        .uno {
+            text-align: right;
+        }
+
+        #dos {
+            text-align: left;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <nav>
     <a href="index.html">Inicio</a>
     <a href="textos.html">Textos y listas</a>
-    <a href="imagenesyenlazes.html">Imagenes y elnlazes</a>
+    <a href="imagenesyenlazes.html">Imagenes y elnlaces</a>
     <a href="tablas.html">Tablas</a>
     <a href="formularios.html">Formularios</a>
 </nav>
-<body>
-    <header>
 
-    </header>
+<body>
+    <h1>IMAGENES Y ENLACES</h1>
+    <hr>
+    <ul>
+        <li>Para insertar un enlace se usa "a".<br>
+            Ej: <a target="_blank" href="aqui el enlace">Y a que el texto que quieres que se vea</a>, si se le pone
+            "target="_blank"" lo ejecutará en otra pestaña</li>
+        <li>Para insertar una imagen se usa "img", utilizando su ruta y se le puede asignar un texto alternativo por si
+            la imagen no sale se mostrará el texto.
+            Para los recursos utilizados se crea una carpeta para tenerlo todo organizado<br>
+            Se puede usar width y height para cambiar el tamaño <br>
+            Ej: <br><img width="200px" height="120px" src="Recursos/r2.jpg" alt="¡Hola! Estoy usando whattsapp">
+        </li>
+
+        <li>Si se quieren insertar gifs se pone "type="gif"" en img: <br> <br>
+            <img src="Recursos/r3.gif" type="gif" width="220px" height="215px">
+        </li>
+
+        <li>Si te quieres referir a una etiqueta en especifico para modificarla o cambiar el formato se utiliza: <br>
+            <ul>
+                <li>"id=nombre": Para referirte a uno solo, en css se le nombra con #nombre</li>
+                <li>"class=nombre": Para referirte a varios en css se le nombra con .nombre</li>
+            </ul>
+            Ej:
+            <p class="uno">Pri</p>
+            <p id="dos">Seg</p>
+            <p class="uno">Ter</p>
+            La conifig está en el css de head
+        </li>
+
+
+    </ul>
+
 </body>
+
 </html>
