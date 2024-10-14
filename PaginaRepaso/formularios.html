@@ -6,6 +6,11 @@
     <title>Formularios</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="Recursos/rec1.png" >
+    <style>
+        #res {
+            width: 20%;
+        }
+    </style>
 </head>
 <nav>
     <a href="../index.html">Inicio</a>
@@ -15,8 +20,19 @@
     <a href="formularios.html">Formularios</a>
 </nav>
 <body>
-    <header>
-
-    </header>
+    <h1>FORMULARIOS</h1>
+    <hr>
+    <ul>
+        <li>Los formularios se ponen dentro de la etiqueta form, que puede servir para enviar los datos establecidos a un servidor:</li>
+        <ul>
+            <li>Para enviar los datos a un servidor es necesatio tener un "action="NombreDelServidor"" y un "method="getOpost"", en el method se pueden poner dos maneras:</li>
+            <ul>
+                <li>get: Envia la información en una URL por lo que lo pueden ver todos.</li>
+                <li>post: Envia la información en el Response Body (Cuerpo)</li>
+            </ul>
+        </ul>
+        <li>Se utiliza "fieldset" para agruparlo todo en una caja y legend para darle un titulo<br>
+        <fieldset id="res"><legend>Ejemplo</legend>Como aquí</fieldset></li>
+    </ul>
 </body>
 </html>
