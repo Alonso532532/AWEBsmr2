@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="Recursos/rec1.png" >
-    <style>
-        #res {
-            width: 20%;
-        }
-    </style>
+    <link rel="shortcut icon" href="Recursos/rec1.png">
 </head>
 <nav>
     <a href="../index.html">Inicio</a>
@@ -19,20 +15,78 @@
     <a href="tablas.html">Tablas</a>
     <a href="formularios.html">Formularios</a>
 </nav>
+
 <body>
     <h1>FORMULARIOS</h1>
     <hr>
     <ul>
-        <li>Los formularios se ponen dentro de la etiqueta form, que puede servir para enviar los datos establecidos a un servidor:</li>
+        <li>Los formularios se ponen dentro de la etiqueta form, que puede servir para enviar los datos establecidos a
+            un servidor:</li>
         <ul>
-            <li>Para enviar los datos a un servidor es necesatio tener un "action="NombreDelServidor"" y un "method="getOpost"", en el method se pueden poner dos maneras:</li>
+            <li>Para enviar los datos a un servidor es necesatio tener un "action="NombreDelServidor"" y un
+                "method="getOpost"", además de que todos los imputs tienen que tenér un
+                name establecido que será el nombre (name="nombre" en el input) con el que interprete la información el
+                servidor, en el method se pueden poner dos maneras:</li>
             <ul>
                 <li>get: Envia la información en una URL por lo que lo pueden ver todos.</li>
-                <li>post: Envia la información en el Response Body (Cuerpo)</li>
+                <li>post: Envia la información en el Response Body (Cuerpo), no se puede ver la respuesta</li>
             </ul>
         </ul>
         <li>Se utiliza "fieldset" para agruparlo todo en una caja y legend para darle un titulo<br>
-        <fieldset id="res"><legend>Ejemplo</legend>Como aquí</fieldset></li>
+            <fieldset>
+                <legend>Ejemplo</legend>Como aquí
+            </fieldset>
+        </li>
+        <li>Se utiliza "input" para crear la mayoría de elementos de un formulario, los hay de muchos tipos</li>
+        <li>Se utiliza "label" para poner un texto antes o despues (pero en la misma linea) vinculandolo con un "id"
+        </li>
+        <li>Ejemplos:</li>
     </ul>
+    <form action="ElAmigos" method="get">
+
+        <fieldset>
+            <legend>Ejemplo</legend>
+            <label for="un">Opinion de la tecnica de cocina del sureste de Moldabia demominada "Post inferno": </label>
+            <input type="text" id="un" name="opinion">
+            <hr>
+            <label for="d">En este input solo se pueden establecer numeros</label>
+            <input type="number" id="d" name="num">
+            <hr>
+            <p>Los input de tipo radio tienen que tenér el mismo name para que solo deje establecer 1 al mismo riempo, y
+                el label va abajo, también en el checkbox</p> <br>
+            <input type="radio" id="r1" name="sexo">
+            <label for="r1">Prefiero no decirlo</label>
+            <br> <br>
+            <input type="radio" id="r2" name="sexo">
+            <label for="r2">Triangulo?</label>
+            <br> <br>
+            <input type="checkbox" name="deseo" id="ch1" checked>
+            <label for="ch1">Deseo recivir cartas en palomas mensajeras con contenidos de spam y demás publicidad no
+                deseada.</label><br>
+            <br>
+            <p>Para poner una lista de opciones desplegable se usa la etiqueta "select", las opciónes se ponen con
+            "option" y los grupos de opcones con optgroup (estos se acompañan de un "label" para establecér el nomre del grupo). <br>
+            El "value" establece que se le enviará a el servidor como información con el tipo del "name"</p>
+            <label for="arm">Arma medieval favorita:</label>
+            <select name="TipoFav" id="arm">
+                <optgroup label="Cuerpo a cuerpo">
+                <option value="espada1mano">Espadas de una mano</option>
+                <option value="espada2manos">Espada a dos manos</option>
+                <option value="maza">Maza</option>
+                <option value="lanza">Lanza</option>
+            </optgroup>
+                <optgroup label="A distancia">
+                <option value="arco">Arco</option>
+                <option value="ballesta">Ballesta</option>
+            </optgroup>
+            </select>
+            <p>Los botones se ponen con la etiqueta "button" y su tipo se establece con type, pueden ser submit o reset
+            </p>
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+
+    </form>
 </body>
+
 </html>
