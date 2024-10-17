@@ -1,0 +1,32 @@
+/* Selector universal */
+* {
+    background-color: rgb(163, 163, 163);
+}
+
+/* Selectores de etiqueta */
+.p1 {
+    color: red;
+    font-size: larger;
+    text-align: left;
+}
+
+h2 {
+    color: green;
+    text-align: center;
+}
+
+section p, #simbolo {
+    color: aqua;
+}
+
+#s1 p, #s1 {
+    background-color: rgb(70, 70, 70);
+}
+
+#s2 p.p1 {
+    background-color: rgb(70, 70, 70);
+}
+
+#s3 {
+    background-color: rgb(70, 70, 70);
+}
