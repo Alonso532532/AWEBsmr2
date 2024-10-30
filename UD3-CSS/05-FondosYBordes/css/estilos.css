@@ -1,0 +1,35 @@
+.cuadrado {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+}
+
+.elemento {
+    background-color: antiquewhite;
+    width: 1000px;
+    height: 500px;
+    background-image: url(https://picsum.photos/1000/500);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.elemento1 {
+    background-color: antiquewhite;
+    width: 1000px;
+    height: 500px;
+    background-image: url(https://picsum.photos/1001/501);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-size: cover;
+}
+.elemento2 {
+    background-color: antiquewhite;
+    width: 1000px;
+    height: 500px;
+    background-image: url(https://picsum.photos/1002/502);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-size: cover;
+}

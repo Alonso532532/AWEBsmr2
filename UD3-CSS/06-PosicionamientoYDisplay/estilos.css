@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    background-color: bisque;
+}
+
+.estatico {
+    background-color: gray;
+    position: static;
+    top: 10px;
+    left: 10px;
+}
+
+.relativa {
+    background-color: brown;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 500px;
+}
+
+.absoluto {
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.espacio {
+    background-color: black;
+    height: 2000px;
+}
+.sticky {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0;
+
+}
+div {
+    padding-left: 5px;
+}

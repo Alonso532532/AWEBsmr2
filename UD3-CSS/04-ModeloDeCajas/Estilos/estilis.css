@@ -1,0 +1,76 @@
+
+
+
+body {
+    background-color: rgb(255, 198, 124);
+    font-family: sans-serif;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.uno {
+    background-color: rgb(220, 220, 255);
+    text-align: center;
+    margin: 5px;
+}
+
+.dos {
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 5px;
+}
+
+.tre {
+    background-color: aquamarine;
+    text-align: center;
+    margin: 5px;
+}
+
+.uno a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: ease-out 5s;
+}
+
+.dos a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: ease-out 5s;
+}
+
+.tre a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: ease-out 5s;
+    
+}
+.uno a:hover {
+    color: purple;
+    transition: ease-in 0.3s;
+}
+
+.dos a:hover {
+    color: purple;
+    transition: ease-in 0.3s;
+}
+
+.tre a:hover {
+    color: purple;
+    transition: ease-in 0s;
+}
+
+div {
+    padding: 15px;
+    transition: ease-out 5s;
+    margin: 0px;
+    border-collapse: collapse;
+    display: inline-block;
+}
+div:hover {
+    background-color: purple;
+    transition: ease-in 0s;
+    margin: 0px;
+}
