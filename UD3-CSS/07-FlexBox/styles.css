@@ -1,0 +1,42 @@
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+.caja {
+    border: 1px solid black;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: bold;
+    width: 80px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 5px;
+}
+.contenedor {
+    border: 2px solid blue;
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.caja1 {
+    background-color: aquamarine;
+}
+
+.caja2 {
+    background-color: rgb(212, 255, 126);
+}
+
+.caja3 {
+    background-color: rgb(210, 158, 255);
+}
+
+.caja4 {
+    background-color: rgb(255, 127, 127);
+}
