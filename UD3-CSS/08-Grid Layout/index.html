@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .contenedor {
+            display: grid;
+            grid-template-columns:(auto-fit, 1fr 1fr 1fr);
+            /* Tres columnas iguales */
+            grid-template-rows: 100px 200px;
+            /* Dos filas de diferentes tamaños */
+            background-color: bisque;
+            gap: 10px;
+        }
+
+        .item1 {
+  grid-column: 1 / span 2; /* Ocupa desde la columna 1 hasta la 3 */
+  grid-row: 1 / span 2;    /* Ocupa solo la primera fila */
+}
+        div {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+</body>
+
+</html>
