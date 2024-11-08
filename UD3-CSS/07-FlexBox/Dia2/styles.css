@@ -72,4 +72,5 @@ body {
     background-color: #e2f1f8;
     color: #ffbc0e;
     transform: scale(1.1);
+    cursor: pointer;
 }
