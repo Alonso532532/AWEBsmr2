@@ -1,0 +1,28 @@
+.contenedor {
+    display: grid;
+    background-color: rgb(234, 234, 234);
+    border: 2px solid black;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contenedor div {
+    border: 2px solid black;
+    gap: 5px;
+}
+
+.cuadro1 {
+
+}
+
+.cuadro2 {
+
+}
+
+.cuadro3 {
+
+}
+
+.cuadro4 {
+
+}
