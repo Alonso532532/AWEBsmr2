@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 4</title>
+    <script>
+        function areaTr(base, altura){
+            return resp = (base * altura) /2;
+        }
+
+        function boton(){
+            let base = parseInt( prompt("Valor de base"));
+            let altura = parseInt( prompt("Valor de altura"));
+            let area = areaTr(base, altura);
+            alert("El area es" + area)
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Ej 4</h2>
+    <button onclick="boton()">Calcular area del triangulo</button>
+</body>
+</html>

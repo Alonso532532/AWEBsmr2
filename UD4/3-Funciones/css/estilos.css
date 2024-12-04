@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+body {
+    background-color: rgb(226, 226, 201);
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .un{
+    background-color: rgb(109, 255, 206);
+    border-radius: 5px;
+    padding: 7px;
+    border: 5px solid rgb(168, 253, 206);
+}
+.container .do{
+    background-color: rgb(172, 255, 103);
+    border-radius: 5px;
+    padding: 7px;
+    border: 5px solid rgb(192, 253, 168);
+}
+.container .tr{
+    background-color: rgb(111, 109, 255);
+    border-radius: 5px;
+    padding: 7px;
+    border: 5px solid rgb(168, 181, 253);
+}
+.container .cu{
+    background-color: rgb(255, 109, 109);
+    border-radius: 5px;
+    padding: 7px;
+    border: 5px solid rgb(253, 168, 168);
+}
+.container .qu{
+    background-color: rgb(250, 109, 255);
+    border-radius: 5px;
+    padding: 7px;
+    border: 5px solid rgb(229, 168, 253);
+}

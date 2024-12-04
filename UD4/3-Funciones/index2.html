@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script>
+        function saludar(nombre){
+            console.log("Hola " + nombre + "!!!")
+        }
+        let num1 =  parseInt( prompt("numerico1"));
+        function sumar(num1, num2){
+            console.log(num1 + num2)
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Funciones con parametros</h2>
+    <button onclick="saludar('Alberto')">Saludo albert</button>
+    <button onclick="saludar('Sufrimiento')">Saludo Kiwi</button>
+    <button onclick="saludar('Pascuals')">Saludo Agente passs</button>
+    <br>
+    <button onclick="sumar(4, 6)">Sumar</button>
+</body>
+</html>

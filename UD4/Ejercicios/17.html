@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JSC</title>
+    <script>
+        function numeroATexto(num){
+            if(num == 1){
+                alert("uno");
+            }
+            if(num == 2){
+                alert("dos");
+            }
+            if(num == 3){
+                alert("tres");
+            }
+            if(num == 4){
+                alert("cuatro");
+            }
+            if(num == 5){
+                alert("cinco");
+            }
+            if(num == 6){
+                alert("seis");
+            }
+            if(num == 7){
+                alert("siete");
+            }
+            if(num == 8){
+                alert("ocho");
+            }
+            if(num == 9){
+                alert("nueve");
+            }
+            if(num == 10){
+                alert("diez");
+            } else if(num > 10) {
+                alert("el numero es invalido");
+            }
+        }  
+        function ejercicio17(){
+            let num = parseInt( prompt("Dame un numero del 1 al 10"))
+            numeroATexto(num)
+        }
+    </script>
+</head>
+<body>
+    <h2>Ejercicio 17</h2>
+    <button onclick="ejercicio17()">Numero a texto</button>
+</body>
+</html>
