@@ -1,0 +1,36 @@
+
+#parrafo{
+    background-color: rgb(204, 204, 204);
+    padding: 3px;
+    text-decoration: underline;
+    font-style: italic;
+}
+#parrafo2{
+    background-color: rgb(204, 204, 204);
+    padding: 3px;
+    text-decoration: underline;
+    font-style: italic;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.COC{
+    display: flex;
+    justify-content: center;
+
+}.BDC{
+    background-color: rgb(184, 184, 184);
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    display: grid;
+}
+.COC .BDC .num1{
+
+}
+.COC .BDC .num2{
+
+}
