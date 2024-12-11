@@ -1,0 +1,51 @@
+body{
+text-indent: 20px;
+word-spacing: 10px;
+line-height: 20px;
+white-space: pre;
+background-image: url(Captura\ de\ pantalla\ 2024-12-03\ 170137.png);
+background-repeat: no-repeat;
+
+}
+.absoluta{
+    position: absolute;
+    background-color: rgb(201, 201, 201);
+    box-shadow: 5px 5px black;
+    top: 70px;
+    right: 50px;
+}
+.statica{
+    position: static;
+    top: 600px;
+}
+.relativa{
+    background-color: aquamarine;
+    position: relative;
+    top: 200px;
+    left: 20px;
+}
+.fijado{
+    position: fixed;
+    top: 0;
+    background-color: bisque;
+    box-shadow: 5px 5px black;
+}
+.ult{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.ult div{
+    border: 5px solid black;
+    width: 150px;
+    height: 170px;
+    margin: 5px;
+    cursor: pointer;
+    transition: ease-out 0.1s;
+}
+.ult div:hover{
+    transform: scale(1.2);
+    transition: ease-in 0.2s;
+
+}

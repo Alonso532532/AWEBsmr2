@@ -1,4 +1,4 @@
-let operacion;
+
 function BUno(){
     let pantalla = document.getElementById("pantalla");
     let uno = "1";
@@ -49,11 +49,39 @@ function BCero(){
     let uno = "0";
     pantalla.innerHTML += uno;
 }
+
+//-----------------------------------------------------
 function BB(){;
     pantalla.innerHTML = "";
 }
+
+//-----------------------------------------------------
 function BSum(){
     let pantalla = document.getElementById("pantalla");
     let uno = "+";
     pantalla.innerHTML += uno;
+}
+function BRes(){
+    let pantalla = document.getElementById("pantalla");
+    let uno = "-";
+    pantalla.innerHTML += uno;
+}
+function BMul(){
+    let pantalla = document.getElementById("pantalla");
+    let uno = "*";
+    pantalla.innerHTML += uno;
+}
+function BDiv(){
+    let pantalla = document.getElementById("pantalla");
+    let uno = "/";
+    pantalla.innerHTML += uno;
+}
+
+//-----------------------------------------------------
+
+function BResultado(){
+    let pantalla = document.getElementById("pantalla");
+    alert("Operación " + pantalla)
+    let resultado = parseInt(pantalla.innerHTML);
+    alert(resultado)
 }
