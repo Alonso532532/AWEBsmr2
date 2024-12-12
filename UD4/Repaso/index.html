@@ -9,20 +9,48 @@
         body {
             background-color: black;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        #base {
-            width: 100%;
+        #basebase {
+            width: 90%;
             height: 850px;
-            background-color: rgb(73, 73, 73);
+            background-color: rgb(111, 111, 111);
             margin: 40px;
             border-radius: 20px;
             padding: 20px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        #base1 {
+            width: 90%;
+            height: 43%;
+            background-color: rgb(73, 73, 73);
+            border-radius: 20px;
+            padding: 20px;
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: repeat(20, 50px);
+            grid-template-rows: repeat(20, 18%);
             gap: 10px;
+        }
+
+        #base2 {
+            width: 90%;
+            height: 43%;
+            background-color: rgb(73, 73, 73);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
         }
 
         button {
@@ -44,95 +72,223 @@
             border-bottom: 4px solid rgb(62, 62, 62);
             margin: 2px;
         }
-        #numer{
-            width: 80px;
-            font-size: medium;
+
+        #numer {
+            width: 100%;
+            font-size: 50px;
             grid-column: 3/4;
+
         }
-        #texto{
+
+        #texto {
             background-color: rgb(29, 29, 29);
             color: white;
             grid-column: 2/4;
         }
+
+        #sum1 {
+            font-size: 50px;
+            width: 45%;
+        }
+
+        #sum2 {
+            font-size: 50px;
+            width: 45%;
+        }
+
+        #paqchulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+        }
+        #arrayt{
+            background-color: black;
+            color: white;
+            width: 500px;
+            height: 250px;
+            border: 10px solid rgb(49, 49, 49);
+            box-sizing: border-box;
+            padding: 4px;
+        }
         /*--------------------------------------------------------------------*/
     </style>
-    
+
     <script>
         ////////////////////////////////////////////////////////////////////////
-        function COMP(){
+        function COMP() {
             let edad = parseInt(prompt("Dime tu edad"));
-            if( edad < 18 ){
+            if (edad < 18) {
                 alert("Tienes " + edad + " años, eres menor de edad");
-            }else if( edad < 80 ){
+            } else if (edad < 80) {
                 alert("Tienes " + edad + " años, eres mayor de edad");
-            }else{
+            } else {
                 alert("Tienes " + edad + ", eres un abuelo");
             }
         }
 
-        function TABL(){
+        function TABL() {
             let mult = parseInt(prompt("Que talba quieres"));
-            for(let i = 0; i <= 10; i = i+1 ){
-                console.log(mult+ " x " +i+ " = " + mult*i);
+            for (let i = 0; i <= 10; i = i + 1) {
+                console.log(mult + " x " + i + " = " + mult * i);
             }
             console.log("FIN");
         }
 
-        function HORA(){
+        function HORA() {
             let horas = parseInt(prompt("Determina el numero de horas"));
-            if(horas == 0){
+            if (horas == 0) {
                 alert("No se han establecido horas");
-            }else if(horas < 0){
+            } else if (horas < 0) {
                 alert("Horas negativas");
-            }else{
-                let dias = horas/24;
+            } else {
+                let dias = horas / 24;
                 let diasb = parseInt(dias);
-                alert(horas+ "h son "+ diasb + " Dias y " + horas%24 + "h, y en segundos serían " + horas*60*60 + "s");
+                alert(horas + "h son " + diasb + " Dias y " + horas % 24 + "h, y en segundos serían " + horas * 60 * 60 + "s");
             }
         }
 
-        function SALU(NUME, SALUD){
-            for(let i = NUME; i > 0; i--){
+        function SALU(NUME, SALUD) {
+            for (let i = NUME; i > 0; i--) {
                 console.log(SALUD);
             }
         }
 
-        function MULT(){
+        function MULT() {
             let num = document.getElementById("numer").value;
-            alert("Has escogido la tabla del "+num);
+            alert("Has escogido la tabla del " + num);
             let ndv = DETE();
-            alert("Se multiplicará hasta el "+ndv);
-            for(let i = 0; i <= ndv; i++){
-                console.log(i+ " x " +num+ " = " + num*i);
+            alert("Se multiplicará hasta el " + ndv);
+            for (let i = 0; i <= ndv; i++) {
+                console.log(i + " x " + num + " = " + num * i);
             }
         }
-        function DETE(){
+        function DETE() {
             let hasta = parseInt(prompt("Hasta donde quieres multiplicar"));
-            return(hasta);
-        }
-        
-        function CCFO(col){
-            let fondo = document.getElementById("padre").style.backgroundColor=col;
+            return (hasta);
         }
 
-        function TXTO(){
-            let textico = prompt("Establece un texto genio")
-            let text = document.getElementById("texto").innerText=textico
+        function CCFO(col) {
+            document.getElementById("padre").style.backgroundColor = col;
         }
+
+        function TXTO() {
+            let textico = prompt("Establece un texto genio");
+            document.getElementById("texto").innerText = textico;
+        }
+        function SUMA() {
+            let num1 = document.getElementById("sum1");
+            let num2 = document.getElementById("sum2");
+            let num11 = num1.value;
+            let num22 = num2.value;
+            let num111 = parseInt(num11);
+            let num222 = parseInt(num22);
+            let resul = num111 + num222;
+            alert(num11 + "+" + num22 + "= " + resul);
+            num1.value = "";
+            num2.value = "";
+        }
+
+        function CONT() {
+            console.log("Con while -----------------------------------")
+            let num = parseInt(prompt("Establece el numero"));
+            let i = 10;
+            while (i < num) {
+                console.log(i);
+                i = i + 1;
+            }
+            console.log(i);
+            console.log("Con for -------------------------------------")
+            for (let b = 10; b <= num; b++) {
+                console.log(b);
+            }
+
+        }
+
+        //////////////////////////////////////////////////////////////////////////////////////
+        function CARR() {
+            let v1 = prompt("Valor 0");
+            let v2 = prompt("Valor 1");
+            let v3 = prompt("Valor 2");
+            let elementos = [v1, v2, v3];
+            let si = 1;
+            while (si == 1) {
+                let opt = prompt("Elije que hacer | 1 para ver un elemento | 2 para ver la cantidad de elementos que tiene | 3 para sustituir un valor | 4 para añadir un valor al principio | 5 para añadir un valor al final | 6 para quitar el primer valor | 7 para quitar el ultimo valor | 8 para dar la vuelta a el orden de los valores | 9 para ordenar los elementos por orden alfabetico | 10 para biscar si un valor existe | El valor actual de el array es: "+elementos+" |.");
+                if (opt == 1) {
+                    let cual = prompt("Que valor quieres ver?");
+                    alert(elementos[cual])
+                } else if (opt == 2) {
+                    alert(elementos.length);
+                } else if (opt == 3) {
+                    let pos = parseInt(prompt("Que posición quieres sustituir?"))
+                    let cual = prompt("Que valor quieres en la posición "+pos+"?");
+                    elementos[pos] = cual;
+                } else if (opt == 4) {
+                    let cual = prompt("Que valor quieres en la primera posición");
+                    elementos.unshift(cual);
+                } else if (opt == 5) {
+                    let cual = prompt("Que valor quieres en la ultima posición");
+                    elementos.push(cual);
+                } else if (opt == 6) {
+                    elementos.shift();
+                } else if (opt == 7) {
+                    elementos.pop();
+                } else if (opt == 8) {
+                    elementos.reverse();
+                } else if (opt == 9) {
+                    elementos.sort();
+                } else if (opt == 10) {
+                    let cual = prompt("Que valor quieres buscar?");
+                    alert(elementos.includes(cual));
+                } else {
+                    alert("Respuesta no valida");
+                }
+                let tele = elementos.length;
+                document.getElementById("arrayt").innerText = elementos+" | Hay un total de "+tele+" elementos |";
+                alert("Tu array contiene: " + elementos);
+                si = prompt("Quieres seguir trabajando? | 1 si | * no");
+            }
+            alert("Fundción finalizada.")
+        }
+
+        function CALCO(val1, val2) {
+            let resu = val1 + val2;
+            return (resu);
+        }
+
+        function CALO() {
+            let num1 = parseInt(prompt("Numero 1"))
+            let num2 = parseInt(prompt("Numero 2"))
+            let res = CALCO(num1, num2)
+            alert("El resultado es: " + res)
+        }
+
     </script>
 </head>
 
 <body id="padre">
-    <div id="base">
-        <button onclick="COMP()">Comprobar edad</button>
-        <button onclick="TABL()">Tabla de lo que elijas</button>
-        <button onclick="HORA()">De horas a dias y segundos</button>
-        <button onclick="SALU(2, 'Hola')">saludar 2 veces</button>
-        <button onclick="MULT()">Tabla de lo escrito y hasta donde elijas</button> <input type="number" id="numer" placeholder="Aqui Nº">
-        <button onclick="CCFO('green')">Cambiar color de fondo a verde</button>
-        <button onclick="CCFO('blue')">Cambiar color de fondo a azul</button>
-        <button onclick="CCFO('black')">Cambiar color de fondo a jeffry</button>
-        <button onclick="TXTO()">Establecer un texto</button><p id="texto"></p>
+    <div id='basebase'>
+        <div id="base1">
+            <button onclick="COMP()">Comprobar edad</button>
+            <button onclick="TABL()">Tabla de lo que elijas</button>
+            <button onclick="HORA()">De horas a dias y segundos</button>
+            <button onclick="SALU(2, 'Hola')">saludar 2 veces</button>
+            <button onclick="MULT()">Tabla de lo escrito y hasta donde elijas</button> <input type="number" id="numer">
+            <button onclick="CCFO('green')">Cambiar color de fondo a verde</button>
+            <button onclick="CCFO('blue')">Cambiar color de fondo a azul</button>
+            <button onclick="CCFO('black')">Cambiar color de fondo a jeffry</button>
+            <button onclick="TXTO()">Establecer un texto</button>
+            <p id="texto"></p>
+            <button onclick="SUMA()">Sumar con los dos numeros</button>
+            <div id="paqchulo"><input type="number" id="sum1">+<input type="number" id="sum2"></div>
+            <button onclick="CONT()">Contar hasta... desde 10</button>
+        </div>
+        <div id="base2">
+            <button onclick="CALO()">Calcular desde otro sitio</button>
+            <button onclick="CARR()">Determinar los valores del array y trabajar con el</button>
+            <p id="arrayt"></p>
+        </div>
     </div>
 </body>
 
