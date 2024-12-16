@@ -241,11 +241,11 @@
                 } else if (opt == 10) {
                     let cual = prompt("Que valor quieres buscar?");
                     alert(elementos.includes(cual));
-                } else {
+                }else{
                     alert("Respuesta no valida");
                 }
                 let tele = elementos.length;
-                document.getElementById("arrayt").innerText = elementos+" | Hay un total de "+tele+" elementos |";
+                document.getElementById("arrayt").innerText = "| El array contenía: "+elementos+" | Hay un total de "+tele+" elementos |";
                 alert("Tu array contiene: " + elementos);
                 si = prompt("Quieres seguir trabajando? | 1 si | * no");
             }
