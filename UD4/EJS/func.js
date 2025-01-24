@@ -7,6 +7,7 @@ function ej1(){
 }
 function ej2(){
     let m = parseInt( prompt("Que tabla quieres"));
+    console.log(m)
     for(let i = 0; i <= 10; i++){
         let resul = i * m;
         console.log(i + " X " + m + " = " + resul);
